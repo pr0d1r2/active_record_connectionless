@@ -5,9 +5,9 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "active_record_connectionless"
-    gem.summary = %Q{TODO: one-line summary of your gem}
+    gem.summary = %Q{connectionless active_record models}
     gem.description = %Q{This gem provides connectionless active_record models useful for testing}
-    gem.email = "pr0d1r2@ragnarson.com"
+    gem.email = "pr0d1r2@gmail.com"
     gem.homepage = "http://github.com/Pr0d1r2/active_record_connectionless"
     gem.authors = ["Marcin Nowicki"]
     gem.add_development_dependency "rspec"
