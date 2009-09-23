@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{active_record_connectionless}
-  s.version = "1.0.0"
+  s.version = "1.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Marcin Nowicki"]
-  s.date = %q{2009-09-15}
+  s.date = %q{2009-09-23}
   s.description = %q{This gem provides connectionless active_record models useful for testing}
   s.email = %q{pr0d1r2@gmail.com}
   s.extra_rdoc_files = [
