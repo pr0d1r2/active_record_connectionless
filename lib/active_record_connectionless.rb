@@ -16,10 +16,12 @@ ActiveRecord::Base.class_eval do
     validate ? valid? : true
   end
 
-  def self.emulate_attribute(name)
-    attr_accessor name
-    define_method("#{name}_before_type_cast") do
-      self.name
+  def self.emulate_attribute(*names)
+    names.each do |name|
+      attr_accessor name
+      define_method("#{name}_before_type_cast") do
+        self.send(name)
+      end
     end
   end
 
